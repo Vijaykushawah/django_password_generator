@@ -61,3 +61,6 @@ $ git config --global user.email johndoe@example.com
 git status
 git add -A
 git status
+
+git add -A
+git commit -m "first commit"
