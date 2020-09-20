@@ -58,3 +58,6 @@ Go to project directory from  cmd then execute command git init
 identity setup
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
+git status
+git add -A
+git status
