@@ -1,0 +1,60 @@
+Creating a New Project
+
+django-admin startproject projectname
+    
+Add an App to a Project
+
+python3 manage.py startapp appname
+    
+Starting the server
+
+python3 manage.py runserver
+    
+Creating Migrations
+
+python3 manage.py makemigrations
+    
+Migrate the Database
+
+python3 manage.py migrate
+    
+Creating a Super User for the Admin Panel
+
+python3 manage.py createsuperuser
+    
+Collecting Static Files Into One Folder
+
+python3 manage.py collectstatic
+
+step1-startproject
+step2-startserver
+step3-startapp and make entry in settings instlled app
+step4-urls.py  file contains urlpatterns,path
+We are providing some specific path and their mapping to some python file
+Now function return a htmlcode thats very hectic if we write html code inside quote so we
+will use template.
+Create tamplates folder and make folder with the same as app name just for readability.
+now create html page.
+use render method of django to render this page.
+
+a.We can pass value from function to html page using dictionary
+b.access value using {{}}
+c.Get value from front end using request.GET.get("name",defaultvalue)
+d.access  url using name  "{% url 'name' %}"
+
+We 1st create url path in urls.py then create function corresponding to mapping function name.
+then fetch request parameter if we have then render the html content using template file .
+and we can pass values to html file using dictionary key values.
+
+Bootstrap your website
+add link
+add <div class="container text-center">
+add class="btn btn-primary" for submit button
+add class="btn btn-warning" for sencodry button
+add class="alert alert-success" for something dynamic generated content
+
+Git install from website 
+Go to project directory from  cmd then execute command git init
+identity setup
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
